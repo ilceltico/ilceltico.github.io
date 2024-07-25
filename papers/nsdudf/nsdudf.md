@@ -48,7 +48,9 @@ description: Neural Surface Detection for Unsigned Distance Fields
 <h2> BibTeX </h2>
 If you find our work useful, please cite it:
 
-TBD
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@inproceedings{stella2024udf,
+  TBD
+}
 </code></pre></div></div>
 
 <!-- 
