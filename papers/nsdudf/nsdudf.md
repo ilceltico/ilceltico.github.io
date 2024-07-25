@@ -41,9 +41,23 @@ description: Neural Surface Detection for Unsigned Distance Fields
 </div>
 
 
+<h1 style="text-align: center;">Pipeline</h1>
+<div style="width: 100%; display:block; margin:auto; padding-bottom:2px;"><img style="margin:5px; border-radius:10px;" src="/papers/nsdudf/assets/Screenshot 2024-07-25 at 23.35.16.png" /></div>
+<div class="div_abstract">
+	We formulate the surface detection problem as a per-cell classification task. In each cell, we map point distances and gradients to a sign configuration of the cell vertices, which can be used to mesh the surface via Marching Cubes or Dual Contouring.
+</div>
+
+<h1 style="text-align: center;">Results</h1>
+
 <div style="width: 100%; display:block; margin:auto; padding-bottom:2px;"><img style="margin:5px; border-radius:10px;" src="/papers/nsdudf/assets/Screenshot 2024-07-25 at 23.27.12.png" /></div>
 
 <div style="width: 100%; display:block; margin:auto; padding-bottom:2px;"><img style="margin:5px; border-radius:10px;" src="/papers/nsdudf/assets/Sequence 02_2.mp4" /></div>
+
+<h1 style="text-align: center;">Quantitative Evaluations</h1>
+<h2 style="text-align: center;">MC-based methods</h2>
+<div style="width: 100%; display:block; margin:auto; padding-bottom:2px;"><img style="margin:5px; border-radius:10px;" src="/papers/nsdudf/assets/Screenshot 2024-07-25 at 23.35.54.png" /></div>
+<h2 style="text-align: center;">DC-based methods</h2>
+<div style="width: 100%; display:block; margin:auto; padding-bottom:2px;"><img style="margin:5px; border-radius:10px;" src="/papers/nsdudf/assets/Screenshot 2024-07-25 at 23.40.45.png" /></div>
 
 <h2> BibTeX </h2>
 If you find our work useful, please cite it:
