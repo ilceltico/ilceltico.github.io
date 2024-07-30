@@ -9,6 +9,7 @@ description: Neural Surface Detection for Unsigned Distance Fields
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
 <h1 style="text-align: center;">Neural Surface Detection for Unsigned Distance Fields</h1>
+<h2 style="text-align: center;">Paper accepted to ECCV 2024</h2>
 
 <h2 style="text-align: center;">
     <a class="page-link" href="https://scholar.google.com/citations?user=UxEI4sQAAAAJ&hl=en">Federico Stella</a>,
@@ -26,8 +27,8 @@ description: Neural Surface Detection for Unsigned Distance Fields
 </div>
 
 <div class="centered_div big" style="padding-bottom:20px;">
-    <div class="div_rounded_corners" style="width: 150px;"><a href="https://arxiv.org/abs/2407.18381" style="color: #fdfdfd;">
-        <i class="ai ai-arxiv"></i> Paper (Arxiv)
+    <div class="div_rounded_corners" style="width: 200px;"><a href="https://arxiv.org/abs/2407.18381" style="color: #fdfdfd;">
+        <i class="ai ai-arxiv"></i> Paper + Supp (Arxiv)
     </a></div>
     <div class="div_rounded_corners" style="width: 320px;"><a href="" style="color: #fdfdfd;">
         <i class="ai ai-arxiv"></i> Paper (ECCV 2024) - Coming Soon
@@ -36,6 +37,8 @@ description: Neural Surface Detection for Unsigned Distance Fields
         <a href="" style="color: #fdfdfd;">Code - Coming Soon</a>
     </p></div>
 </div>
+
+<h2 style="text-align: center;"> Feel free to contact us for any questions! </h2>
 
 <div style="width: 100%; display:block; margin:auto; padding-bottom:2px;"><img style="margin:5px; border-radius:10px;" src="/papers/nsdudf/assets/Sequence 02_2.mp4" /></div>
 
