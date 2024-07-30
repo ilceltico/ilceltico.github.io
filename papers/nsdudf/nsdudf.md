@@ -26,11 +26,14 @@ description: Neural Surface Detection for Unsigned Distance Fields
 </div>
 
 <div class="centered_div big" style="padding-bottom:20px;">
-    <div class="div_rounded_corners"><a href="" style="color: #fdfdfd;">
-        <i class="ai ai-arxiv"></i> Paper (TBA)
+    <div class="div_rounded_corners" style="width: 150px;"><a href="https://arxiv.org/abs/2407.18381" style="color: #fdfdfd;">
+        <i class="ai ai-arxiv"></i> Paper (Arxiv)
     </a></div>
-    <div class="div_rounded_corners"><p style="color: #fdfdfd;"><object data="/assets/github_logo.svg"></object>
-        <a href="" style="color: #fdfdfd;">Code (TBA)</a>
+    <div class="div_rounded_corners" style="width: 320px;"><a href="" style="color: #fdfdfd;">
+        <i class="ai ai-arxiv"></i> Paper (ECCV 2024) - Coming Soon
+    </a></div>
+    <div class="div_rounded_corners" style="width: 200px;"><p style="color: #fdfdfd;"><object data="/assets/github_logo.svg"></object>
+        <a href="" style="color: #fdfdfd;">Code - Coming Soon</a>
     </p></div>
 </div>
 
