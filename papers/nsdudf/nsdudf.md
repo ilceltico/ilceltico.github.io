@@ -62,8 +62,14 @@ description: Neural Surface Detection for Unsigned Distance Fields
 <h2> BibTeX </h2>
 If you find our work useful, please cite it:
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@inproceedings{stella2024udf,
-  TBD
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@misc{stella2024neuralsurfacedetectionunsigned,
+      title={Neural Surface Detection for Unsigned Distance Fields}, 
+      author={Federico Stella and Nicolas Talabot and Hieu Le and Pascal Fua},
+      year={2024},
+      eprint={2407.18381},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2407.18381}, 
 }
 </code></pre></div></div>
 
