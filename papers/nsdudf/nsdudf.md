@@ -34,6 +34,8 @@ description: Neural Surface Detection for Unsigned Distance Fields
     </p></div>
 </div>
 
+<div style="width: 100%; display:block; margin:auto; padding-bottom:2px;"><img style="margin:5px; border-radius:10px;" src="/papers/nsdudf/assets/Sequence 02_2.mp4" /></div>
+
 
 <div class="div_abstract">
 	<h1 style="text-align: center;">Abstract</h1>
@@ -50,8 +52,6 @@ description: Neural Surface Detection for Unsigned Distance Fields
 <h1 style="text-align: center;">Results</h1>
 
 <div style="width: 100%; display:block; margin:auto; padding-bottom:2px;"><img style="margin:5px; border-radius:10px;" src="/papers/nsdudf/assets/Screenshot 2024-07-25 at 23.27.12.png" /></div>
-
-<div style="width: 100%; display:block; margin:auto; padding-bottom:2px;"><img style="margin:5px; border-radius:10px;" src="/papers/nsdudf/assets/Sequence 02_2.mp4" /></div>
 
 <h1 style="text-align: center;">Quantitative Evaluations</h1>
 <h2 style="text-align: center;">MC-based methods</h2>
