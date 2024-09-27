@@ -40,7 +40,9 @@ description: Neural Surface Detection for Unsigned Distance Fields
 
 <h2 style="text-align: center;"> Feel free to contact us for any questions! </h2>
 
-<div style="width: 100%; display:block; margin:auto; padding-bottom:2px;"><img style="margin:5px; border-radius:10px;" src="/papers/nsdudf/assets/Sequence 02_2.mp4" /></div>
+<video width="100%" muted autoplay controls>
+    <source src="/papers/nsdudf/assets/Sequence 02_2.mp4" type="video/mp4">
+</video>
 
 
 <div class="div_abstract">

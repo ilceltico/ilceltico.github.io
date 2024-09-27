@@ -59,7 +59,9 @@ layout: home
 <div>
     <div class="split left small">
         <div>
-        <img id="pp" src="/assets/ours.mp4" />
+            <video width="100%" muted autoplay>
+                <source src="/assets/ours.mp4" type="video/mp4">
+            </video>
         </div>
     </div>
     <div class="split right big">
