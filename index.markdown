@@ -73,7 +73,7 @@ layout: home
         <p><b>
             <a href="/nsdudf">[Project Page]</a>
         	<a href="https://arxiv.org/abs/2407.18381">[Paper]</a>
-        	<a href="">[Code coming soon]</a>
+        	<a href="https://github.com/ilceltico/nsdudf">[Code]</a>
         </b></p>
         <p>A neural approach to turn a UDF into a local SDF, which can be meshed with traditional algorithms.</p>
     </div>

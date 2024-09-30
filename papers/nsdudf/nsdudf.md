@@ -34,7 +34,7 @@ description: Neural Surface Detection for Unsigned Distance Fields
         <i class="ai ai-arxiv"></i> Paper (ECCV 2024) - Coming Soon
     </a></div>
     <div class="div_rounded_corners" style="width: 200px;"><p style="color: #fdfdfd;"><object data="/assets/github_logo.svg"></object>
-        <a href="" style="color: #fdfdfd;">Code - Coming Soon</a>
+        <a href="https://github.com/ilceltico/nsdudf" style="color: #fdfdfd;">Code</a>
     </p></div>
 </div>
 
