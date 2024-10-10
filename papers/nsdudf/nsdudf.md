@@ -27,13 +27,16 @@ description: Neural Surface Detection for Unsigned Distance Fields
 </div>
 
 <div class="centered_div big" style="padding-bottom:20px;">
-    <div class="div_rounded_corners" style="width: 200px;"><a href="https://arxiv.org/abs/2407.18381" style="color: #fdfdfd;">
+    <div class="div_rounded_corners" style="width: 220px;"><a href="https://arxiv.org/abs/2407.18381" style="color: #fdfdfd;">
         <i class="ai ai-arxiv"></i> Paper + Supp (Arxiv)
     </a></div>
-    <div class="div_rounded_corners" style="width: 320px;"><a href="" style="color: #fdfdfd;">
-        <i class="ai ai-arxiv"></i> Paper (ECCV 2024) - Coming Soon
+    <div class="div_rounded_corners" style="width: 220px;"><a href="https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/07593.pdf" style="color: #fdfdfd;">
+        <i class="ai ai-arxiv"></i> Paper (ECCV 2024)
     </a></div>
-    <div class="div_rounded_corners" style="width: 200px;"><p style="color: #fdfdfd;"><object data="/assets/github_logo.svg"></object>
+    <div class="div_rounded_corners" style="width: 220px;"><a href="/papers/nsdudf/assets/Poster ECCV 2024-maxsize-11.pdf" style="color: #fdfdfd;">
+        <i class="ai ai-arxiv"></i> Poster (ECCV 2024)
+    </a></div>
+    <div class="div_rounded_corners" style="width: 220px;"><p style="color: #fdfdfd;"><object data="/assets/github_logo.svg"></object>
         <a href="https://github.com/ilceltico/nsdudf" style="color: #fdfdfd;">Code</a>
     </p></div>
 </div>
@@ -49,6 +52,9 @@ description: Neural Surface Detection for Unsigned Distance Fields
 	<h1 style="text-align: center;">Abstract</h1>
 	Extracting surfaces from Signed Distance Fields (SDFs) can be accomplished using traditional algorithms, such as Marching Cubes. However, since they rely on sign flips across the surface, these algorithms cannot be used directly on Unsigned Distance Fields (UDFs). In this work, we introduce a deep-learning approach to taking a UDF and turning it locally into an SDF, so that it can be effectively triangulated using existing algorithms. We show that it achieves better accuracy in surface detection than existing methods. Furthermore it generalizes well to unseen shapes and datasets, while being parallelizable. We also demonstrate the flexibily of the method by using it in conjunction with DualMeshUDF, a state of the art dual meshing method that can operate on UDFs, improving its results and removing the need to tune its parameters.
 </div>
+
+<h1 style="text-align: center;">Video explanation</h1>
+<iframe style="aspect-ratio: 16 / 9; width: 100% !important;" src="https://www.youtube.com/embed/XJjEY6MswI4?si=M9ivDAyTP6Afv-qd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 <h1 style="text-align: center;">Pipeline</h1>
