@@ -47,6 +47,7 @@ description: Neural Surface Detection for Unsigned Distance Fields
     <source src="/papers/nsdudf/assets/Sequence 02_2.mp4" type="video/mp4">
 </video>
 
+<div style="width: 100%; display:block; margin:auto; padding-bottom:2px;"><img style="margin:5px; border-radius:10px;" src="/papers/nsdudf/assets/Screenshot 2024-10-23 at 18.37.15.png" /></div>
 
 <div class="div_abstract">
 	<h1 style="text-align: center;">Abstract</h1>
@@ -63,11 +64,12 @@ description: Neural Surface Detection for Unsigned Distance Fields
 	We formulate the surface detection problem as a per-cell classification task. In each cell, we map point distances and gradients to a sign configuration of the cell vertices, which can be used to mesh the surface via Marching Cubes or Dual Contouring.
 </div>
 
-<h1 style="text-align: center;">Results</h1>
-
-<div style="width: 100%; display:block; margin:auto; padding-bottom:2px;"><img style="margin:5px; border-radius:10px;" src="/papers/nsdudf/assets/Screenshot 2024-07-25 at 23.27.12.png" /></div>
 
 <h1 style="text-align: center;">Quantitative Evaluations</h1>
+<div class="div_abstract">
+	We compute Chamfer Distance and Image Consistency over hundreds of shapes to find the following results.<br>   
+  Note: DCUDF can achieve better accuracy by removing the cutting step. However this would make the surface double layered.
+</div>
 <h2 style="text-align: center;">MC-based methods</h2>
 <div style="width: 100%; display:block; margin:auto; padding-bottom:2px;"><img style="margin:5px; border-radius:10px;" src="/papers/nsdudf/assets/Screenshot 2024-07-25 at 23.35.54.png" /></div>
 <h2 style="text-align: center;">DC-based methods</h2>
