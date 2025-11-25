@@ -56,11 +56,36 @@ layout: home
 # Publications
 *(full list on [scholar](https://scholar.google.com/citations?user=UxEI4sQAAAAJ&hl=en))*
 
+<div style="clear: both;"> </div>
+
+<div>
+    <div class="split left small">
+        <div>
+            <img id="pp" src="/assets/hrudf_thumb.gif" />
+        </div>
+    </div>
+    <div class="split right big">
+    	<h2>High Resolution UDF Meshing via Iterative Networks</h2>
+        <p><a class="page-link" href="https://scholar.google.com/citations?user=UxEI4sQAAAAJ&hl=en">Federico Stella</a>,
+        <a class="page-link" href="https://scholar.google.com/citations?hl=en&user=f2LbcbAAAAAJ">Nicolas Talabot</a>,
+        <a class="page-link" href="https://scholar.google.com/citations?hl=en&user=Bj9g-EEAAAAJ">Hieu Le</a>,
+        <a class="page-link" href="https://scholar.google.com/citations?user=kzFmAkYAAAAJ&hl=en">Pascal Fua</a>; at NeurIPS 2025 </p>
+        <p><b>
+            <a href="/hrudf">[Project Page]</a>
+        	<a href="https://arxiv.org/abs/2509.17212">[Paper]</a>
+        	<a>[Code - Coming Soon]</a>
+        </b></p>
+        <p>Meshing neural UDFs at high resolution poses intrinsic challenges, with many algorithms missing entire surface portions. But what if we let an algorithm run multiple times, refining its predictions iteratively?</p>
+    </div>
+</div>
+
+<div style="clear: both;"> </div>
+
 <div>
     <div class="split left small">
         <div>
             <video width="100%" muted autoplay>
-                <source src="/assets/ours.mp4" type="video/mp4">
+                <source src="/assets/nsdudf_thumb.mp4" type="video/mp4">
             </video>
         </div>
     </div>
