@@ -1,8 +1,8 @@
 ---
 layout: paper
-title: "NSDUDF"
-permalink: /nsdudf/
-description: Neural Surface Detection for Unsigned Distance Fields
+title: "HRUDF"
+permalink: /hrudf/
+description: High Resolution UDF Meshing via Iterative Networks
 ---
 
 <!-- Import 3D viewer component -->
@@ -30,59 +30,62 @@ description: Neural Surface Detection for Unsigned Distance Fields
     <div class="div_rounded_corners" style="width: 220px;"><a href="https://arxiv.org/abs/2509.17212" style="color: #fdfdfd;">
         <i class="ai ai-arxiv"></i> Paper + Supp (Arxiv)
     </a></div>
-    <div class="div_rounded_corners" style="width: 220px;"><a href="/papers/nsdudf/assets/Poster ECCV 2024-maxsize-11.pdf" style="color: #fdfdfd;">
+    <div class="div_rounded_corners" style="width: 220px;"><a href="/papers/hrudf/assets/NeurIPS poster6.pdf" style="color: #fdfdfd;">
         <i class="ai ai-arxiv"></i> Poster (NeurIPS 2025)
     </a></div>
     <div class="div_rounded_corners" style="width: 220px;"><p style="color: #fdfdfd;"><object data="/assets/github_logo.svg"></object>
-        <a style="color: #fdfdfd;">Code - Coming Soon</a>
+        <a href="https://github.com/ilceltico/hrudf" style="color: #fdfdfd;">Code</a>
     </p></div>
+    <!-- <div class="div_rounded_corners" style="width: 220px;"><p style="color: #fdfdfd;"><object data="/assets/github_logo.svg"></object>
+        <a style="color: #fdfdfd;">Code - Coming Soon</a>
+    </p></div> -->
 </div>
 
 <h2 style="text-align: center;"> Feel free to contact us for any questions! </h2>
 
-<video width="100%" muted autoplay controls>
-    <source src="/papers/nsdudf/assets/Sequence 02_2.mp4" type="video/mp4">
-</video>
-
-<div style="width: 100%; display:block; margin:auto; padding-bottom:2px;"><img style="margin:5px; border-radius:10px;" src="/papers/nsdudf/assets/Screenshot 2024-10-23 at 18.37.15.png" /></div>
+<div style="width: 100%; display:block; margin:auto; padding-bottom:2px;"><img style="margin:5px; border-radius:10px;" src="/papers/hrudf/assets/teaser_animation.gif" /></div>
 
 <div class="div_abstract">
 	<h1 style="text-align: center;">Abstract</h1>
-	Extracting surfaces from Signed Distance Fields (SDFs) can be accomplished using traditional algorithms, such as Marching Cubes. However, since they rely on sign flips across the surface, these algorithms cannot be used directly on Unsigned Distance Fields (UDFs). In this work, we introduce a deep-learning approach to taking a UDF and turning it locally into an SDF, so that it can be effectively triangulated using existing algorithms. We show that it achieves better accuracy in surface detection than existing methods. Furthermore it generalizes well to unseen shapes and datasets, while being parallelizable. We also demonstrate the flexibily of the method by using it in conjunction with DualMeshUDF, a state of the art dual meshing method that can operate on UDFs, improving its results and removing the need to tune its parameters.
+	Unsigned Distance Fields (UDFs) are a natural implicit representation for open surfaces but, unlike Signed Distance Fields (SDFs), are challenging to triangulate into explicit meshes. This is especially true at high resolutions where neural UDFs exhibit higher noise levels, which makes it hard to capture fine details. Most current techniques perform within single voxels without reference to their neighborhood, resulting in missing surface and holes where the UDF is ambiguous or noisy. We show that this can be remedied by performing several passes and by reasoning on previously extracted surface elements to incorporate neighborhood information. Our key contribution is an iterative neural network that does this and progressively improves surface recovery within each voxel by spatially propagating information from increasingly distant neighbors. Unlike single-pass methods, our approach integrates newly detected surfaces, distance values, and gradients across multiple iterations, effectively correcting errors and stabilizing extraction in challenging regions. Experiments on diverse 3D models demonstrate that our method produces significantly more accurate and complete meshes than existing approaches, particularly for complex geometries, enabling UDF surface extraction at higher resolutions where traditional methods fail.
 </div>
 
-<h1 style="text-align: center;">Video explanation</h1>
-<iframe style="aspect-ratio: 16 / 9; width: 100% !important;" src="https://www.youtube.com/embed/XJjEY6MswI4?si=M9ivDAyTP6Afv-qd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-
-<h1 style="text-align: center;">Pipeline</h1>
-<div style="width: 100%; display:block; margin:auto; padding-bottom:2px;"><img style="margin:5px; border-radius:10px;" src="/papers/nsdudf/assets/Screenshot 2024-07-25 at 23.35.16.png" /></div>
+<h1 style="text-align: center;">The problem</h1>
+<div style="width: 100%; display:block; margin:auto; padding-bottom:2px;"><img style="margin:5px; border-radius:10px;" src="/papers/hrudf/assets/resolution.png" /></div>
 <div class="div_abstract">
-	We formulate the surface detection problem as a per-cell classification task. In each cell, we map point distances and gradients to a sign configuration of the cell vertices, which can be used to mesh the surface via Marching Cubes or Dual Contouring.
+	Neural UDFs are noisy and difficult to mesh. Counterintuitively, meshing at higher resolutions worsens the problem, with existing methods often missing entire portions of the surface.
 </div>
 
-
-<h1 style="text-align: center;">Quantitative Evaluations</h1>
+<h1 style="text-align: center;">Our pipeline</h1>
+<div style="width: 100%; display:block; margin:auto; padding-bottom:2px;"><img style="margin:5px; border-radius:10px;" src="/papers/hrudf/assets/pipeline.png" /></div>
 <div class="div_abstract">
-	We compute Chamfer Distance and Image Consistency over hundreds of shapes to find the following results.<br>   
-  Note: DCUDF can achieve better accuracy by removing the cutting step. However this would make the surface double layered.
+	We formulate high-resolution meshing as an iterative process: each iteration takes the previous output state as input and refines it.
 </div>
-<h2 style="text-align: center;">MC-based methods</h2>
-<div style="width: 100%; display:block; margin:auto; padding-bottom:2px;"><img style="margin:5px; border-radius:10px;" src="/papers/nsdudf/assets/Screenshot 2024-07-25 at 23.35.54.png" /></div>
-<h2 style="text-align: center;">DC-based methods</h2>
-<div style="width: 100%; display:block; margin:auto; padding-bottom:2px;"><img style="margin:5px; border-radius:10px;" src="/papers/nsdudf/assets/Screenshot 2024-07-25 at 23.40.45.png" /></div>
+
+<h1 style="text-align: center;">An iterative improvement</h1>
+<div style="width: 100%; display:block; margin:auto; padding-bottom:2px;"><img style="margin:5px; border-radius:10px;" src="/papers/hrudf/assets/iterations.png" /></div>
+<div class="div_abstract">
+	The mesh is improved over multiple iterations, where each step integrates newly detected surfaces, distance values, and gradients from neighboring cells.
+</div>
+
+<h1 style="text-align: center;">The result</h1>
+<div style="width: 100%; display:block; margin:auto; padding-bottom:2px;"><img style="margin:5px; border-radius:10px;" src="/papers/hrudf/assets/results.png" /></div>
+<div class="div_abstract">
+	While still being far from perfect, we obtain state of the art results across multiple datasets and with multiple different UDF backbones.
+</div>
+
 
 <h2> BibTeX </h2>
 If you find our work useful, please cite it:
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@InProceedings{stella2024nsdudf,
-    author="Stella, Federico and Talabot, Nicolas and Le, Hieu and Fua, Pascal",
-    title="Neural Surface Detection for Unsigned Distance Fields",
-    booktitle="European Conference on Computer Vision",
-    year="2024",
-    publisher="Springer",
-    pages="394--409",
-    isbn="978-3-031-73636-0"
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@misc{stella2025hrudf,
+      title={High Resolution UDF Meshing via Iterative Networks}, 
+      author={Federico Stella and Nicolas Talabot and Hieu Le and Pascal Fua},
+      year={2025},
+      eprint={2509.17212},
+      archivePrefix={arXiv},
+      primaryClass={cs.GR},
+      url={https://arxiv.org/abs/2509.17212}, 
 }
 </code></pre></div></div>
 

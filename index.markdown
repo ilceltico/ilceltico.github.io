@@ -73,7 +73,7 @@ layout: home
         <p><b>
             <a href="/hrudf">[Project Page]</a>
         	<a href="https://arxiv.org/abs/2509.17212">[Paper]</a>
-        	<a>[Code - Coming Soon]</a>
+        	<a href="https://github.com/ilceltico/hrudf">[Code]</a>
         </b></p>
         <p>Meshing neural UDFs at high resolution poses intrinsic challenges, with many algorithms missing entire surface portions. But what if we let an algorithm run multiple times, refining its predictions iteratively?</p>
     </div>
