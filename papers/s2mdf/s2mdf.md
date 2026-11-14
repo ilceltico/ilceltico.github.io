@@ -3,6 +3,7 @@ layout: paper
 title: "S2MDF"
 permalink: /papers/2026/s2mdf/
 description: "S2MDF: A Plug-And-Play Layer for Intersection-Free Multi-Object Signed Distance Fields"
+image: /assets/previews/s2mdf.jpg
 ---
 
 <style>

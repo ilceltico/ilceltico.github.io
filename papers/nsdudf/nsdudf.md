@@ -5,6 +5,7 @@ permalink: /papers/2024/nsdudf/
 redirect_from:
   - /nsdudf/
 description: Neural Surface Detection for Unsigned Distance Fields
+image: /assets/previews/nsdudf.jpg
 ---
 
 <!-- Import 3D viewer component -->
