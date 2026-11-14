@@ -22,6 +22,7 @@ title: Federico Stella
 email: federico.stella@epfl.ch
 description: >- # this means to ignore newlines until "baseurl:"
   PhD student at EPFL, Switzerland. Computer Vision Laboratory (prof. Pascal Fua).
+  Research on 3D computer vision, neural implicit surfaces, and Signed and Unsigned Distance Fields (SDFs, UDFs).
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://ilceltico.github.io" # the base hostname & protocol, used for absolute links in link previews
 twitter_username: ilceltico95
