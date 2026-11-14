@@ -1,7 +1,9 @@
 ---
 layout: paper
 title: "HRUDF"
-permalink: /hrudf/
+permalink: /papers/2025/hrudf/
+redirect_from:
+  - /hrudf/
 description: High Resolution UDF Meshing via Iterative Networks
 ---
 

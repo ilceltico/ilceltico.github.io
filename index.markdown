@@ -61,6 +61,32 @@ layout: home
 <div>
     <div class="split left small">
         <div>
+            <video width="100%" muted autoplay loop playsinline>
+                <source src="/assets/s2mdf_thumb.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    <div class="split right big">
+    	<h2>S2MDF: A Plug-And-Play Layer for Intersection-Free Multi-Object Signed Distance Fields</h2>
+        <p><a class="page-link" href="https://scholar.google.com/citations?user=kpTb5N8AAAAJ&hl=en">Deniz Sayin Mercadier</a>*,
+        <a class="page-link" href="https://scholar.google.com/citations?user=UxEI4sQAAAAJ&hl=en">Federico Stella</a>*,
+        Aurel Bizeau,
+        <a class="page-link" href="https://scholar.google.com/citations?hl=en&user=f2LbcbAAAAAJ">Nicolas Talabot</a>,
+        <a class="page-link" href="https://scholar.google.com/citations?user=kzFmAkYAAAAJ&hl=en">Pascal Fua</a>; at NeurIPS 2026 </p>
+        <p><b>
+            <a href="/papers/2026/s2mdf/">[Project Page]</a>
+        	<a href="https://arxiv.org/abs/2605.29761">[Paper]</a>
+        	<a href="https://youtu.be/Fm-X_E88Es8">[Video]</a>
+        </b></p>
+        <p>Objects represented by separate SDFs can interpenetrate. S2MDF is a plug-and-play layer that makes multi-object SDFs intersection-free by construction, during training or as post-processing.</p>
+    </div>
+</div>
+
+<div style="clear: both;"> </div>
+
+<div>
+    <div class="split left small">
+        <div>
             <img id="pp" src="/assets/hrudf_thumb.gif" />
         </div>
     </div>
@@ -71,7 +97,7 @@ layout: home
         <a class="page-link" href="https://scholar.google.com/citations?hl=en&user=Bj9g-EEAAAAJ">Hieu Le</a>,
         <a class="page-link" href="https://scholar.google.com/citations?user=kzFmAkYAAAAJ&hl=en">Pascal Fua</a>; at NeurIPS 2025 </p>
         <p><b>
-            <a href="/hrudf">[Project Page]</a>
+            <a href="/papers/2025/hrudf/">[Project Page]</a>
         	<a href="https://arxiv.org/abs/2509.17212">[Paper]</a>
         	<a href="https://github.com/ilceltico/hrudf">[Code]</a>
         </b></p>
@@ -96,7 +122,7 @@ layout: home
         <a class="page-link" href="https://scholar.google.com/citations?hl=en&user=Bj9g-EEAAAAJ">Hieu Le</a>,
         <a class="page-link" href="https://scholar.google.com/citations?user=kzFmAkYAAAAJ&hl=en">Pascal Fua</a>; at ECCV 2024 </p>
         <p><b>
-            <a href="/nsdudf">[Project Page]</a>
+            <a href="/papers/2024/nsdudf/">[Project Page]</a>
         	<a href="https://arxiv.org/abs/2407.18381">[Paper]</a>
         	<a href="https://github.com/ilceltico/nsdudf">[Code]</a>
         </b></p>

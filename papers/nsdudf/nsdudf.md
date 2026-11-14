@@ -1,7 +1,9 @@
 ---
 layout: paper
 title: "NSDUDF"
-permalink: /nsdudf/
+permalink: /papers/2024/nsdudf/
+redirect_from:
+  - /nsdudf/
 description: Neural Surface Detection for Unsigned Distance Fields
 ---
 
