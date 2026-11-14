@@ -1,10 +1,10 @@
 ---
 layout: paper
-title: "HRUDF"
+title: "HRUDF: High Resolution UDF Meshing via Iterative Networks"
 permalink: /papers/2025/hrudf/
 redirect_from:
   - /hrudf/
-description: High Resolution UDF Meshing via Iterative Networks
+description: "Project page of High Resolution UDF Meshing via Iterative Networks (HRUDF), NeurIPS 2025, by Federico Stella, Nicolas Talabot, Hieu Le and Pascal Fua (EPFL CVLab)."
 image: /assets/previews/hrudf.jpg
 ---
 

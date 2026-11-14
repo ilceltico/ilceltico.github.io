@@ -1,8 +1,8 @@
 ---
 layout: paper
-title: "S2MDF"
+title: "S2MDF: A Plug-And-Play Layer for Intersection-Free Multi-Object Signed Distance Fields"
 permalink: /papers/2026/s2mdf/
-description: "S2MDF: A Plug-And-Play Layer for Intersection-Free Multi-Object Signed Distance Fields"
+description: "Project page of S2MDF: A Plug-And-Play Layer for Intersection-Free Multi-Object Signed Distance Fields, NeurIPS 2026, by Deniz Sayin Mercadier, Federico Stella, Nicolas Talabot and Pascal Fua (EPFL CVLab)."
 image: /assets/previews/s2mdf.jpg
 ---
 

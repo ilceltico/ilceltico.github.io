@@ -1,10 +1,10 @@
 ---
 layout: paper
-title: "NSDUDF"
+title: "NSDUDF: Neural Surface Detection for Unsigned Distance Fields"
 permalink: /papers/2024/nsdudf/
 redirect_from:
   - /nsdudf/
-description: Neural Surface Detection for Unsigned Distance Fields
+description: "Project page of Neural Surface Detection for Unsigned Distance Fields (NSDUDF), ECCV 2024, by Federico Stella, Nicolas Talabot, Hieu Le and Pascal Fua (EPFL CVLab)."
 image: /assets/previews/nsdudf.jpg
 ---
 
