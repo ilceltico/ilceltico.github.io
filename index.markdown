@@ -40,7 +40,7 @@ layout: home
 <div>
     <div class="split right" style="width: 40%">
         <div>
-        <img id="pp" src="/assets/3B8A0921.jpg" />
+        <img id="pp" src="/assets/3B8A0921.jpg" alt="Federico Stella" />
         </div>
     </div>
     <div class="split left" style="text-align: justify; text-justify: inter-word;">

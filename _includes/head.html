@@ -11,5 +11,26 @@
       {%- include google-analytics.html -%}
     {%- endif -%} -->
     {%- include google-analytics.html -%}
-    <!-- <meta name="google-site-verification" content="rst2lwplZ2amNpjVDwFXTIRxLVIAmAYtwX6gUyDlb5Y" /> -->
+    <meta name="google-site-verification" content="rst2lwplZ2amNpjVDwFXTIRxLVIAmAYtwX6gUyDlb5Y" />
+    {%- if page.url == "/" -%}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Federico Stella",
+      "url": "{{ site.url }}/",
+      "image": "{{ site.url }}/assets/3B8A0921.jpg",
+      "jobTitle": "PhD student",
+      "affiliation": {"@type": "Organization", "name": "EPFL Computer Vision Laboratory (CVLab)", "url": "https://cvlab.epfl.ch"},
+      "knowsAbout": ["3D computer vision", "Unsigned Distance Fields", "neural implicit representations", "surface reconstruction"],
+      "sameAs": [
+        "https://scholar.google.com/citations?user=UxEI4sQAAAAJ",
+        "https://github.com/ilceltico",
+        "https://www.linkedin.com/in/federicostella95/",
+        "https://twitter.com/ilceltico95"
+      ]
+    }
+    </script>
+    {%- endif -%}
+
   </head>
